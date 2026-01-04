@@ -1,0 +1,332 @@
+footer .container {
+  max-width: 100%;
+}
+
+footer {
+  border-top: 1px solid #ffffff33;
+}
+
+.footer-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 42px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 32px;
+}
+
+.phone {
+  padding-bottom: 10px;
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--white);
+  text-decoration: none;
+  transition: color 0.25s ease;
+}
+
+.phone:hover,
+.phone:focus {
+  color: var(--brown);
+  text-decoration: underline;
+}
+
+.footer-logo {
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+
+.footer-logo .logo {
+  padding-bottom: 16px;
+}
+
+.footer-logo p {
+  font-size: 14px;
+  line-height: 18px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer-menus {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 32px;
+  color: #fff;
+}
+
+.footer-links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+}
+
+.footer-links a {
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: var(--white);
+  text-decoration: none;
+  position: relative;
+  transition: color 0.25s ease;
+}
+
+.footer-links a:hover,
+.footer-links a:focus {
+  color: var(--brown);
+}
+
+.footer-links a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 1px;
+  background-color: var(--brown);
+  transition: width 0.25s ease;
+}
+
+.footer-links a:hover::after,
+.footer-links a:focus::after {
+  width: 100%;
+}
+
+.footer-links li:nth-child(1) a {
+  width: 77px;
+  height: 18px;
+}
+.footer-links li:nth-child(2) a {
+  width: 72px;
+  height: 18px;
+}
+.footer-links li:nth-child(3) a {
+  width: 61px;
+  height: 18px;
+}
+
+.menu:nth-of-type(2) .footer-links li:nth-child(1) a {
+  width: 67px;
+}
+.menu:nth-of-type(2) .footer-links li:nth-child(2) a {
+  width: 95px;
+}
+.menu:nth-of-type(2) .footer-links li:nth-child(3) a {
+  width: 97px;
+}
+.menu:nth-of-type(2) .footer-links li:nth-child(4) a {
+  width: 59px;
+}
+.menu:nth-of-type(2) .footer-links li:nth-child(5) a {
+  width: 72px;
+}
+
+.form-field {
+  display: flex;
+  gap: 16px;
+  width: 100%;
+}
+
+.form-field form {
+  flex: 1;
+}
+
+.form-field input {
+  width: 100%;
+  height: 60px;
+  padding: 0 16px;
+  border-radius: 12px;
+  border: none;
+  font-size: 16px;
+}
+
+.form-field button {
+  width: 60px;
+  height: 60px;
+  border-radius: 12px;
+  background-color: var(--black2);
+  border: 1px solid #ffffff33;
+  color: var(--white);
+
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  transition: transform 0.25s ease, border-color 0.25s ease,
+    background-color 0.25s ease, box-shadow 0.25s ease, color 0.25s ease;
+}
+
+.form-field button:hover,
+.form-field button:focus {
+  border-color: var(--brown);
+  box-shadow: 0 5px 5px rgba(190, 166, 158, 0.1);
+  transform: translateY(-2px);
+  background-color: var(--black2);
+  color: var(--brown);
+}
+
+.footer-copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--white);
+}
+
+.agreement p {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  color: var(--white);
+  cursor: pointer;
+  transition: color 0.25s ease;
+}
+
+.agreement p:hover,
+.agreement p:focus {
+  color: var(--brown);
+  text-decoration: underline;
+}
+
+.agreement a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.agreement br {
+  display: none;
+}
+
+.copyright {
+  text-align: right;
+}
+
+@media (max-width: 767px) {
+  .the-end {
+    height: 535px;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .footer-links li:nth-child(1) a {
+    width: 50px;
+    height: 14px;
+  }
+  .footer-links li:nth-child(2) a {
+    width: 48px;
+    height: 14px;
+  }
+  .footer-links li:nth-child(3) a {
+    width: 45px;
+    height: 14px;
+  }
+
+  .menu:nth-of-type(2) .footer-links li:nth-child(1) a {
+    width: 55px;
+  }
+  .menu:nth-of-type(2) .footer-links li:nth-child(2) a {
+    width: 70px;
+  }
+  .menu:nth-of-type(2) .footer-links li:nth-child(3) a {
+    width: 72px;
+  }
+  .menu:nth-of-type(2) .footer-links li:nth-child(4) a {
+    width: 45px;
+  }
+  .menu:nth-of-type(2) .footer-links li:nth-child(5) a {
+    width: 50px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1280px) {
+  .footer-logo .logo {
+    padding-bottom: 25px;
+  }
+
+  .footer-container {
+    padding: 56px 40px;
+    display: grid;
+    grid-template-columns: 1.2fr 1fr auto;
+    column-gap: 32px;
+    row-gap: 24px;
+    align-items: start;
+  }
+
+  .footer-menus {
+    grid-column: 2 / 3;
+    justify-content: flex-start;
+  }
+
+  .form-field {
+    grid-column: 3 / 4;
+    align-self: start;
+  }
+
+  .footer-copyright {
+    grid-column: 1 / -1;
+    justify-content: space-between;
+  }
+
+  .footer-links li:nth-child(1) a {
+    width: 65px;
+    height: 16px;
+  }
+  .footer-links li:nth-child(2) a {
+    width: 60px;
+    height: 16px;
+  }
+  .footer-links li:nth-child(3) a {
+    width: 55px;
+    height: 16px;
+  }
+
+  .menu:nth-of-type(2) .footer-links li:nth-child(1) a {
+    width: 60px;
+  }
+  .menu:nth-of-type(2) .footer-links li:nth-child(2) a {
+    width: 85px;
+  }
+  .menu:nth-of-type(2) .footer-links li:nth-child(3) a {
+    width: 87px;
+  }
+  .menu:nth-of-type(2) .footer-links li:nth-child(4) a {
+    width: 50px;
+  }
+  .menu:nth-of-type(2) .footer-links li:nth-child(5) a {
+    width: 65px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .footer-container {
+    padding: 50px 80px;
+    display: grid;
+    grid-template-columns: 1.3fr 1fr 1fr auto;
+    column-gap: 48px;
+    align-items: start;
+  }
+
+  .footer-menus {
+    grid-column: 2 / 4;
+    justify-content: center;
+    gap: 40px;
+  }
+
+  .form-field {
+    grid-column: 4 / 5;
+  }
+
+  .footer-copyright {
+    grid-column: 1 / -1;
+    margin-top: 40px;
+    justify-content: space-between;
+  }
+}
