@@ -1,0 +1,262 @@
+header .container {
+  max-width: 100%;
+}
+
+header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: var(--black);
+  font-family: 'DM Sans', sans-serif;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.nav-manage {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex: 1;
+  min-width: 0;
+  background-color: var(--black);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  padding: 15px 20px;
+  color: white;
+  height: 60px;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 18px;
+  color: var(--white);
+}
+
+.nav-list {
+  display: none;
+  margin: 0;
+  padding: 0;
+  gap: 28px;
+  font-weight: 400;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: var(--white);
+}
+
+.buttons {
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+}
+
+.menu-btn {
+  color: white;
+  cursor: pointer;
+}
+
+.header-signup-btn {
+  display: none;
+  border-radius: 12px;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 58px;
+  font-weight: 700;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: var(--black);
+}
+
+.nav-list a {
+  position: relative;
+  color: var(--white);
+  transition: color 0.2s ease;
+}
+
+.nav-list a:hover,
+.nav-list a:focus {
+  color: var(--brown);
+}
+
+.header-signup-btn:hover,
+.header-signup-btn:focus {
+  background-color: var(--black2);
+  color: var(--brown);
+  border-color: #ffffff33;
+}
+
+.nav-list a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0;
+  height: 2px;
+  background-color: var(--brown);
+  transition: width 0.25s ease;
+}
+
+.nav-list a:hover::after,
+.nav-list a:focus::after {
+  width: 100%;
+}
+
+.cam-icon {
+  width: 16px;
+  height: 16px;
+  fill: var(--brown);
+  opacity: 0.4;
+  transition: fill 0.2s ease;
+}
+
+.icon-wrap {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--black2);
+  border-radius: 50%;
+}
+
+.icon-wrap:hover .cam-icon,
+.icon-wrap:focus .cam-icon {
+  opacity: 1;
+}
+
+.nav-icon {
+  width: 40px;
+  height: 28px;
+  padding: 0;
+  margin: 0;
+  stroke: var(--white);
+  transition: stroke 0.2s ease;
+}
+
+.menu-btn:hover .nav-icon,
+.menu-btn:focus .nav-icon {
+  stroke: var(--brown);
+}
+
+.menu-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: #12121266;
+  z-index: 1000;
+}
+
+.is-open {
+  display: flex;
+}
+
+.test {
+  width: 200px;
+}
+
+.header-menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.menu-content {
+  background-color: var(--brown);
+  padding-left: 20px;
+  padding-top: 180px;
+  padding-bottom: 133px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: var(--black);
+  font-weight: 400;
+  font-size: 14px;
+  position: relative;
+}
+
+.menu li:hover,
+.menu li:focus {
+  font-weight: 700;
+}
+
+.menu-content a {
+  color: var(--black);
+  transition: color 0.2s ease;
+}
+
+.menu-content a:hover,
+.menu-content a:focus {
+  font-weight: 700;
+}
+
+.cross {
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 2000;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  header {
+    padding-bottom: 40px;
+  }
+
+  .camera-btn {
+    display: none;
+  }
+
+  .header-signup-btn {
+    display: inline-flex;
+    border-radius: 12px;
+    padding: 16px 84px;
+    width: 239px;
+    height: 60px;
+  }
+
+  .nav-manage {
+    padding: 16px 20px;
+  }
+
+  .nav-icon {
+    width: 40px;
+    height: 28px;
+  }
+
+  .bigcam {
+    width: 480px;
+
+    height: auto;
+    display: block;
+  }
+
+  .menu-content {
+    padding-left: 64px;
+    padding-top: 232px;
+    padding-bottom: 114px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .is-open {
+    display: none;
+  }
+
+  .nav-list {
+    display: flex;
+    margin-left: auto;
+  }
+
+  .buttons {
+    display: none;
+  }
+
+  .nav-manage {
+    padding: 22px 50px;
+  }
+}
