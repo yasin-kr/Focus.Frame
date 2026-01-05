@@ -1,5 +1,4 @@
 .mentors {
-  background-color: var();
   width: 100vw;
   position: relative;
   left: 50%;
@@ -24,41 +23,39 @@
 .mentors-list {
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  gap: 40px;
 }
 .mentor-card {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
+
 .mentor-card img {
   width: 180px;
   height: 180px;
-  margin: 0 auto 16px;
   border-radius: 50%;
   object-fit: cover;
+  margin-bottom: 16px;
 }
 .mentor-name {
   margin-bottom: 8px;
   font-size: 18px;
-  color: #fff;
+  color: var(--white);
 }
 h3 {
-  color: #fff;
-  font-family: DM Sans;
+  color: var(--white);
 }
 p {
   color: rgb(255, 255, 255, 0.5);
-  font-family: DM Sans;
 }
 
 @media screen and (min-width: 768px) {
-  .container {
-    max-width: 768px;
-    padding: 0 32px;
-  }
   .mentors-list {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 32px;
+    gap: 93px;
   }
 
   .mentor-card img {
