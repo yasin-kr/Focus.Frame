@@ -166,7 +166,8 @@ nav {
   background-color: var(--brown);
   padding-left: 20px;
   padding-top: 180px;
-  padding-bottom: 133px;
+  padding-bottom: 462px;
+  padding-right: 101px;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -201,7 +202,28 @@ nav {
   cursor: pointer;
 }
 
+.menu-image {
+  height: 329px;
+  width: 218px;
+  background-image: url(../img/camera.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+
+
+
 @media (min-width: 768px) {
+
+  .menu-image {
+    width: 476px;
+    height: 480px;
+  }
+
   header {
     padding-bottom: 40px;
   }
@@ -227,17 +249,13 @@ nav {
     height: 28px;
   }
 
-  .bigcam {
-    width: 480px;
-
-    height: auto;
-    display: block;
-  }
 
   .menu-content {
     padding-left: 64px;
     padding-top: 232px;
     padding-bottom: 114px;
+    padding-right: 319px;
+    padding-bottom: 590px;
   }
 }
 
