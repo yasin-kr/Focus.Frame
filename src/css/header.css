@@ -6,7 +6,6 @@ header {
   padding-top: 20px;
   padding-bottom: 20px;
   background-color: var(--black);
-  font-family: 'DM Sans', sans-serif;
 }
 
 nav {
@@ -25,7 +24,7 @@ nav {
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 12px;
   padding: 15px 20px;
-  color: white;
+  color: var(--white);
   height: 60px;
 }
 
@@ -53,14 +52,14 @@ nav {
 }
 
 .menu-btn {
-  color: white;
+  color: var(--white);
   cursor: pointer;
 }
 
 .header-signup-btn {
   display: none;
   border-radius: 12px;
-  background-color: white;
+  background-color: var(--white);
   justify-content: center;
   align-items: center;
   padding: 16px 58px;

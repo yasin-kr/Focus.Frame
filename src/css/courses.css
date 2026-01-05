@@ -118,20 +118,15 @@
 .courses-item-title {
   margin-top: 40px;
   margin-bottom: 12px;
-  font-family: DM Sans;
-
   font-size: 28px;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0;
   max-width: 180px;
-  white-space: normal;
 }
 
 .courses-item-text {
   font-size: 14px;
-  font-family: DM Sans;
-  font-weight: 400;
   font-style: regular;
   line-height: 18px;
   letter-spacing: -0.02em;
@@ -143,14 +138,12 @@
 @media (min-width: 768px) {
   .courses-header {
     flex-direction: row;
-    justify-content: flex-start;
-    gap: 250px;
+    justify-content: space-between;
     margin-bottom: 50px;
   }
 
   .courses-title {
     font-size: 48px;
-    font-family: DM Sans;
     font-weight: 500;
     line-height: 54px;
   }
@@ -231,7 +224,6 @@
     font-size: 16px;
     line-height: 20px;
     margin-top: auto;
-    font-family: DM Sans;
     font-style: regular;
     letter-spacing: -0.02em;
   }
