@@ -41,3 +41,12 @@ button,
 select {
     font: inherit;
 }
+
+html,
+body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden !important;
+    /* Yatay kaymayı zorla kapatır */
+    position: relative;
+}

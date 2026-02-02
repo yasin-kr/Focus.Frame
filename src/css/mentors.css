@@ -7,7 +7,8 @@
   margin-right: -50vw;
   padding: 60px 0;
   background-color: var(--black);
-  min-width: 320px;
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
 .mentors-title {
